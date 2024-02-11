@@ -1,0 +1,122 @@
+Q.1 Write a c++ program to generate multiplication table.
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n,i;
+clrscr();
+cout<<"Enter number:";
+cin>>n;
+for(i=1;i<=10;i++)
+{
+cout<<n*i;
+cout<<"\n";
+}
+getch();
+}
+
+Q.2 Write a C++ program to display 'n' numbers of Fibonacci series.
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n,i,f=0,s=1,t;
+clrscr();
+cout<<"Enter limit:";
+cin>>n;
+cout<<f<<"\t"<<s;
+for(i=1;i<n;i++)
+{
+t=f+s;
+cout<<"\t"<<t;
+f=s;
+s=t;
+}
+getch();
+}
+
+
+Q.3 Write a C++ program to reverse number.
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n,i,d,s=0;
+clrscr();
+cout<<"Enter number";
+cin>>n;
+for(i=0;i<=n;i++)
+{
+d=n%10;
+s=s*10+d;
+n=n/10;
+}
+cout<<"Reverse number:"<<s;
+getch();
+}
+
+
+Q.4 Write a c++ program to display Armstrong numbers between two intervals.
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int n,i,d,s=0,num;
+clrscr();
+cout<<"Enter number";
+cin>>n;
+n=num;
+for(i=1;i<=n;i++)
+{
+d=n%10;
+s=s+d*d*d;
+n=n/10;
+}
+if(sum==num)
+{
+cout<<"Number is Armstrong";
+}
+else
+{
+cout<<"\n Number is not Armstrong";
+}
+getch();
+}
+
+
+Q.5 Write a C++ program to accept two integers and an arithmetic operator(+,-,*,/)from user and performs the corresponding 
+operationand display the result.
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int a,b,ch,c;
+clrscr();
+cout<<"Enter two numbers:";
+cin>>a>>b;
+cout<<" 1.+ 2.- 3.* 4./ Enter choice";
+cin>>ch;
+switch(ch)
+{
+case 1:c=a+b;
+       cout<<"Addition="<<c;
+       break;
+case 2:c=a-b;
+       cout<<"Substraction="<<c;
+       break;
+case 3:c=a*b;
+       cout<<"Multiplication="<<c;
+       break;
+case 4:c=a/b;
+       cout<<"Division="<<c;
+       break;
+default:cout<<"Invalide choice";
+       break;
+}
+getch();
+}
